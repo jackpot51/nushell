@@ -352,7 +352,8 @@ fn rm(
                     #[cfg(all(
                         feature = "trash-support",
                         not(target_os = "android"),
-                        not(target_os = "ios")
+                        not(target_os = "ios"),
+                        not(target_os = "redox")
                     ))]
                     {
                         use std::io::Error;
@@ -374,7 +375,8 @@ fn rm(
                     #[cfg(any(
                         not(feature = "trash-support"),
                         target_os = "android",
-                        target_os = "ios"
+                        target_os = "ios",
+                        target_os = "redox"
                     ))]
                     {
                         use std::io::{Error, ErrorKind};

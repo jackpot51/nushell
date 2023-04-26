@@ -1989,10 +1989,9 @@ dependencies = [
 [[package]]
 name = "is-root"
 version = "0.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "04a4202a60e86f1c9702706bb42270dadd333f2db7810157563c86f17af3c873"
+source = "git+https://gitlab.com/WindSoilder/is-root?rev=f999f08f76ee0a7ed350da99603d5c1c701c7a81#f999f08f76ee0a7ed350da99603d5c1c701c7a81"
 dependencies = [
- "users 0.10.0",
+ "users",
  "winapi 0.3.9",
 ]
 
@@ -2194,9 +2193,8 @@ dependencies = [
 
 [[package]]
 name = "libc"
-version = "0.2.141"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3304a64d199bb964be99741b7a14d26972741915b3649639149b2479bb46f4b5"
+version = "0.2.142"
+source = "git+https://gitlab.redox-os.org/redox-os/liblibc.git?branch=redox-pw#f4ed4a786550fd075ce65bc79164fe78bb01d1ec"
 
 [[package]]
 name = "libgit2-sys"
@@ -2922,7 +2920,7 @@ dependencies = [
  "unicode-width",
  "ureq",
  "url",
- "users 0.11.0",
+ "users",
  "uuid",
  "wax",
  "which",
@@ -3378,8 +3376,7 @@ checksum = "0ab1bc2a289d34bd04a330323ac98a1b4bc82c9d9fcb1e66b63caa84da26b575"
 [[package]]
 name = "open"
 version = "4.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "873240a4a404d44c8cd1bf394359245d466a5695771fea15a79cafbc5e5cf4d7"
+source = "git+https://github.com/jackpot51/open-rs?branch=redox#4c31d9cb55a60881a84c81454c3f433b2c215809"
 dependencies = [
  "is-wsl",
  "pathdiff",
@@ -5607,19 +5604,8 @@ dependencies = [
 
 [[package]]
 name = "users"
-version = "0.10.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "aa4227e95324a443c9fcb06e03d4d85e91aabe9a5a02aa818688b6918b6af486"
-dependencies = [
- "libc",
- "log",
-]
-
-[[package]]
-name = "users"
 version = "0.11.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "24cc0f6d6f267b73e5a2cadf007ba8f9bc39c6a6f9666f8cf25ea809a153b032"
+source = "git+https://github.com/jackpot51/rust-users?branch=redox#1837900e780409f78928559729929d1f27b30339"
 dependencies = [
  "libc",
  "log",
