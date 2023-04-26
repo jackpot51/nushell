@@ -168,8 +168,6 @@ bench = false
 is-root = { git = "https://gitlab.com/WindSoilder/is-root", rev = "f999f08f76ee0a7ed350da99603d5c1c701c7a81" }
 # https://github.com/rust-lang/libc/pull/3228
 libc = { git = "https://gitlab.redox-os.org/redox-os/liblibc.git", branch = "redox-pw" }
-# https://github.com/Byron/open-rs/pull/74
-open = { git = "https://github.com/jackpot51/open-rs", branch = "redox" }
 # https://github.com/ogham/rust-users/pull/53
 users = { git = "https://github.com/jackpot51/rust-users", branch = "redox" }
 
