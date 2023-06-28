@@ -3375,12 +3375,10 @@ checksum = "0ab1bc2a289d34bd04a330323ac98a1b4bc82c9d9fcb1e66b63caa84da26b575"
 
 [[package]]
 name = "open"
-version = "4.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3a083c0c7e5e4a8ec4176346cf61f67ac674e8bfb059d9226e1c54a96b377c12"
+version = "4.0.2"
+source = "git+https://github.com/jackpot51/open-rs?branch=redox#4c31d9cb55a60881a84c81454c3f433b2c215809"
 dependencies = [
  "is-wsl",
- "libc",
  "pathdiff",
 ]
 
