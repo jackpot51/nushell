@@ -170,6 +170,7 @@ is-root = { git = "https://gitlab.com/WindSoilder/is-root", rev = "f999f08f76ee0
 libc = { git = "https://gitlab.redox-os.org/redox-os/liblibc.git", branch = "redox-pw" }
 # https://github.com/ogham/rust-users/pull/53
 users = { git = "https://github.com/jackpot51/rust-users", branch = "redox" }
+crossterm = { git = "https://github.com/rw-vanc/crossterm.git", branch = "redox" }
 
 # Criterion benchmarking setup
 # Run all benchmarks with `cargo bench`
