@@ -198,6 +198,18 @@ pub fn glob_with(pattern: &str, options: MatchOptions) -> Result<Paths, PatternE
         p.to_path_buf()
     }
 
+    // temporary fix until std::path::Component supports Redox schemes
+    #[cfg(target_os = "redox")]
+    let pattern_string = if pattern.starts_with("file:") {
+        let mut pattern_string = "/".to_string();
+        pattern_string.push_str(&pattern["file:".len() ..]);
+        pattern_string
+    } else {
+        pattern.to_string()
+    };
+    #[cfg(target_os = "redox")]
+    let pattern = &pattern_string[..];
+
     // make sure that the pattern is valid first, else early return with error
     Pattern::new(pattern)?;
 
