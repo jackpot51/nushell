@@ -164,8 +164,6 @@ bench = false
 # nu-ansi-term = {git = "https://github.com/nushell/nu-ansi-term.git", branch = "main"}
 
 #REDOX PATCHES
-# https://gitlab.com/caralice/is-root/-/merge_requests/1
-is-root = { git = "https://gitlab.com/WindSoilder/is-root", rev = "f999f08f76ee0a7ed350da99603d5c1c701c7a81" }
 # https://github.com/rust-lang/libc/pull/3228
 libc = { git = "https://gitlab.redox-os.org/redox-os/liblibc.git", branch = "redox-pw" }
 # https://github.com/ogham/rust-users/pull/53
