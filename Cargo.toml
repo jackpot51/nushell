@@ -168,7 +168,7 @@ bench = false
 libc = { git = "https://gitlab.redox-os.org/redox-os/liblibc.git", branch = "redox-pw" }
 # https://github.com/ogham/rust-users/pull/53
 users = { git = "https://github.com/jackpot51/rust-users", branch = "redox" }
-crossterm = { git = "https://github.com/rw-vanc/crossterm.git", branch = "redox" }
+# crossterm = { git = "https://github.com/rw-vanc/crossterm.git", branch = "redox" }
 
 # Criterion benchmarking setup
 # Run all benchmarks with `cargo bench`
